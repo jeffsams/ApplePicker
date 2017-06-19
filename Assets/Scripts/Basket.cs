@@ -3,10 +3,14 @@ using System.Collections;
 
 public class Basket : MonoBehaviour {
 
+    public GUIText scoreGT;
+
 	// Use this for initialization
 	void Start () {
-	
-	}
+        GameObject scoreGO = GameObject.Find("ScoreCounter");
+        scoreGT = scoreGO.GetComponent<GUIText>();
+        scoreGT.text = "0";
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -27,6 +31,13 @@ public class Basket : MonoBehaviour {
         if (collidedWith.tag =="Apple")
         {
             Destroy(collidedWith);
+        }
+        int score = int.Parse(scoreGT.text);
+        score += 100;
+        scoreGT.text = score.ToString();
+        if (score > HighScore.score)
+        {
+            HighScore.score = score;
         }
     }
 }
