@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc989e33035aae04dbb5840e6146d9f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  applePrefab: {fileID: 1392637120476330, guid: 041ad1f37ce1645dbaaba1027c4186ab,
+  applePrefab: {fileID: 1495083543030788, guid: 041ad1f37ce1645dbaaba1027c4186ab,
     type: 2}
   speed: 5
   leftAndRightEdge: 10
@@ -327,7 +327,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254fa57aa5fb4e942aac81e92c37f4b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basketPrefab: {fileID: 192158, guid: de728fd4f99f94c76a8a65699f3ca6fe, type: 2}
+  basketPrefab: {fileID: 1017298386283954, guid: de728fd4f99f94c76a8a65699f3ca6fe,
+    type: 2}
   numBaskets: 3
   basketBottomY: -14
   basketSpacingY: 2
